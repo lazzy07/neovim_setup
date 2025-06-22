@@ -7,10 +7,9 @@ return {
 				sources = {
 					null_ls.builtins.formatting.stylua,
 					null_ls.builtins.formatting.prettier,
-					null_ls.builtins.diagnostics.eslint_d,
 				},
 			})
-			vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
+			vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {}) -- Format the file using prettier etc.
 		end,
 	},
 	{
@@ -22,7 +21,7 @@ return {
 		},
 		config = function()
 			require("mason-null-ls").setup({
-				ensure_installed = { "stylua", "eslint_d" },
+				ensure_installed = { "stylua" },
 			})
 		end,
 	},

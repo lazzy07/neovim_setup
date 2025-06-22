@@ -30,5 +30,9 @@ Want more info? Go to typecraft channel on YT.
 ### Neo Tree (File Tree visualizer)
 - Open file tree: `Ctrl + N` in **Normal** mode.
 
+### Alpha-Nvim
+This plugin is used to show the startup page of the nvim
 
+### None-ls
+- Format the current file `<leader>gf`
 
